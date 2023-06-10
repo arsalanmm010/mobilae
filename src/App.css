@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+* {
+   margin: 0;
+   padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   font-family: "Segoe UI,Roboto,Helvetica Neue,Arial";
+   font-style: normal;
+   color: #2C3E50;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 330px;
+   margin-bottom: -20px;
+   /* background-size: cover; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-img {
+   position: relative;
+   z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main-img {
+   position: relative;
+   z-index: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+   display: flex;
+   flex-direction: column;
+   /* background-color: aquamarine; */
+}
+
+.main-two-img {
+   position: relative;
+   z-index: 1;
+}
+
+.main-two-box {
+   margin: 30px 180px;
+   display: flex;
+   gap: 20px;
+}
+
+.main-two-col1 {
+   margin-top: -80px;
+   width: 50%;
+
+}
+
+.main-two-col1-head {
+   font-size: 40px;
+   font-weight: 900;
+   margin-bottom: 10px;
+}
+
+.main-two-col1-para {
+   /* background-color: aqua; */
+   font-size: 16px;
+   /* font-weight: 200; */
+   line-height: 1.7rem;
+   margin-bottom: 10px;
+}
+
+.main-two-col1-head2 {
+   font-size: 20px;
+   font-weight: 900;
+   margin-bottom: 10px;
+}
+
+.main-two-col1-ol {
+   margin-left: 30px;
+   line-height: 1.7rem;
+}
+
+
+.main-two-col2-head {
+   font-size: 40px;
+   font-weight: 900;
+   margin-bottom: 10px;
+}
+
+
+.main-two-col2-butt {
+   width: 100%;
+   background-color: #FF5A00;
+   color: white;
+   border-radius: 10px;
+   padding: 16px;
+   margin-bottom: 30px;
+}
+
+.form-div {
+   background-color: #50A89E;
+   border-radius: 10px;
+   padding: 20px 30px;
+   height: 70%;
+}
+
+.form-div-head {
+   font-size: 32px;
+   font-weight: 900;
+   text-align: center;
+   color: white;
+   margin-bottom: 30px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+input,
+select {
+   padding: 16px;
+   border-radius: 4px;
+}
+
+.form-button {
+   background-color: #FF5A00;
+   border-radius: 10px;
+   padding: 16px;
+   color: white;
+   margin-bottom: 50px;
+}
+
+.main-three {
+   background-color: #B9E6FF;
+}
+
+.main-three-box {
+   margin: 0px 160px;
+   display: flex;
+   gap: 10px;
+   height: 80vh;
+}
+
+.main-three-content {
+   margin-top: 30px;
+}
+
+.main-3-img {
+   width: 620px;
+   margin-top: 60px;
+   border-radius: 7px;
+}
+
+.main-three-head {
+   font-size: 44px;
+   font-weight: 900;
+   line-height: 2.5rem;
+   margin-bottom: 10px;
+}
+
+.main-three-para {
+   font-size: 17px;
+   font-weight: 500;
+   line-height: 2.2rem;
+}
+
+
+.foot {
+   background-color: #133c46;
+   padding: 32px;
+}
+
+.foot-ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   list-style: none;
+}
+
+.foot-ul>li {
+   text-decoration: none;
+   color: white;
+}
+
+span:hover {
+   cursor: grab;
+}
+
+@media (max-width: 600px) {
+   .navbar {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      height: 53px;
+   }
+
+   .logo-img {
+      /* width: 100px; */
+      height: 45px;
+   }
+
+   .nav-img {
+      height: 20px;
+      margin-bottom: 12px;
+   }
+
+   .main-two-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 20px 10px;
+   }
+
+   .main-two-img {
+      width: 300px;
+      position: relative;
+      z-index: 0;
+      margin-left: 80px;
+      margin-top: 80px;
+   }
+
+   .main-two-col1 {
+      width: 100%;
+   }
+
+   .main-two-col2 {
+      width: 95%;
+   }
+
+   .main-three-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin: 20px 10px;
+   }
+
+
+
+   .main-three-img {
+      margin-top: -50px;
+   }
+
+   .main-3-img {
+      margin-left: 10px;
+
+      width: 345px;
+   }
 }
